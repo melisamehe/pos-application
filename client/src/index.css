@@ -6,10 +6,22 @@
 body {
   margin: 0;
   font-family: "Electrolize", serif;
-  overflow:hidden;
+  
   
 }
 
-.categories::-webkit-scrollbar{
-  display:none;
+
+
+@media (min-width:768px){
+  body{
+    overflow: hidden;
+  }
+  .atn-btn-primary{
+    background-color: blue;
+  }
+
+  .categories::-webkit-scrollbar{
+    display: none;
+  }
+
 }
