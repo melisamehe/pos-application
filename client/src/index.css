@@ -10,15 +10,15 @@ body {
   
 }
 
+.atn-btn-primary{
+  background-color: blue;
+}
 
 
 @media (min-width:768px){
   body{
-    overflow: hidden;
-  }
-  .atn-btn-primary{
-    background-color: blue;
-  }
+    overflow: hidden;}
+ 
 
   .categories::-webkit-scrollbar{
     display: none;
