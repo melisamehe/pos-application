@@ -65,9 +65,9 @@ const StatisticPage = () => {
     radius: 1,
     innerRadius: 0.6,
     label: {
-      type: "inner",
+      
       offset: "-50%",
-      content: "{value}",
+      content: "${value}",
       style: {
         textAlign: "center",
         fontSize: 14,
