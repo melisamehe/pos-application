@@ -5,7 +5,7 @@ const CartTotal = () => {
     return (
       <div className="cart h-full max-h-[calc(100vh_-_90px)] flex flex-col">
           <h2 className="bg-blue-600 text-center py-4 text-white font-bold tracking-wide">Sepetteki Ürünler</h2>
-          <ul class="cart-items px-2 flex flex-col gap-y-3 py-2 overflow-y-auto">
+          <ul className="cart-items px-2 flex flex-col gap-y-3 py-2 overflow-y-auto">
             <li className="cart-item flex justify-between">
               <div className="flex items-center">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/1200px-Red_Apple.jpg" alt="" className="w-16 h-16 object-cover"/>
