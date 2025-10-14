@@ -7,22 +7,21 @@ const Edit = ({
   categories,
   setCategories,
 }) => {
-    const[products,setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-     const getProducts = async () => {
-       try {
-         const res = await fetch("http://localhost:5000/api/products/get-all");
-         const data =await res.json();
-         
-         setProducts(data)
-       } catch (error) {
-         console.log(error);
-       }
-     };
- 
-     getProducts();
-   }, [])
+  useEffect(() => {
+    const getProducts = async () => {
+      try {
+        const res = await fetch("http://localhost:5000/api/products/get-all");
+        const data = await res.json();
+        setProducts(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    getProducts();
+  }, []);
 
   const onFinish = (values) => {
     console.log(values);
@@ -44,7 +43,7 @@ const Edit = ({
     }
   };
 
-   const deleteCategory = (id) => {
+  const deleteCategory = (id) => {
     if (window.confirm("Emin misiniz?")) {
       try {
         fetch("http://localhost:5000/api/categories/delete-category", {
@@ -65,37 +64,39 @@ const Edit = ({
     {
       title: "Ürün Adı",
       dataIndex: "title",
+      width: "8%",
       render: (_, record) => {
-        if (record._id === editingRow._id) {
-          return (
-            <Form.Item className="mb-0" name="title">
-              <Input defaultValue={record.title} />
-            </Form.Item>
-          );
-        } else {
-          return <p>{record.title}</p>;
-        }
+        return <p>{record.title}</p>;
       },
     },
     {
       title: "Ürün Görseli",
       dataIndex: "img",
+      width: "4%",
+      render: (_, record) => {
+        return (
+          <img src={record.img} alt="" className="w-full h-20 object-cover" />
+        );
+      },
     },
     {
       title: "Ürün Fiyatı",
       dataIndex: "price",
+      width: "8%",
+    },
+    {
+      title: "Kategori",
+      dataIndex: "category",
+      width: "8%",
     },
     {
       title: "Action",
       dataIndex: "action",
+      width: "8%",
       render: (_, record) => {
         return (
           <div>
-            <Button
-              type="link"
-              onClick={() => setEditingRow(record)}
-              className="pl-0"
-            >
+            <Button type="link" className="pl-0">
               Düzenle
             </Button>
             <Button type="link" htmlType="submit" className="text-gray-500">
@@ -115,16 +116,18 @@ const Edit = ({
   ];
 
   return (
-  
-      <Form onFinish={onFinish}>
-        <Table
-          bordered
-          dataSource={products}
-          columns={columns}
-          rowKey={"_id"}
-        />
-      </Form>
-   
+    <Form onFinish={onFinish}>
+      <Table
+        bordered
+        dataSource={products}
+        columns={columns}
+        rowKey={"_id"}
+        scroll={{
+          x: 1000,
+          y: 600,
+        }}
+      />
+    </Form>
   );
 };
 

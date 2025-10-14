@@ -1,7 +1,7 @@
 import {Header} from "../components/Header/Header";
 import {Categories} from "../components/categories/Categories";
 import React, { useState, useEffect } from "react";
-import {Products} from "../components/products/Products";
+import Products from "../components/products/Products";
 
 import CartTotal from '../components/cart/CartTotal';
 
