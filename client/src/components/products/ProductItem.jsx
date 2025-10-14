@@ -1,6 +1,6 @@
 import React from 'react'
 import {addProduct} from "../../redux/cartSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
  
 const ProductItem = ({ item }) => {
 
@@ -9,7 +9,7 @@ const ProductItem = ({ item }) => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
-    dispatch(addProduct(item));
+    dispatch(addProduct({ ...item, quantity: 1}));
   };
 
 
@@ -21,7 +21,7 @@ const ProductItem = ({ item }) => {
       </div>
       <div className="product-info flex flex-col p-3">
         <span className="font-bold">{item.title}</span>
-        <span>{item.price}</span>
+        <span>{item.price}₺</span>
       </div>
     </div>
   );
