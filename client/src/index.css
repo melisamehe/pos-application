@@ -10,6 +10,11 @@ body {
   
   
 }
+.menu-link.anticon{
+  display:flex;
+  justify-content: center;;
+}
+
 
 .atn-btn-primary{
   background-color: blue;
