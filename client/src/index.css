@@ -12,7 +12,7 @@ body {
 }
 .menu-link.anticon{
   display:flex;
-  justify-content: center;;
+  justify-content: center;
 }
 
 
@@ -27,6 +27,10 @@ body {
  
 
   .categories::-webkit-scrollbar{
+    display: none;
+  }
+
+    .products::-webkit-scrollbar{
     display: none;
   }
 
