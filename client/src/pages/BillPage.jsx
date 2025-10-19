@@ -1,4 +1,4 @@
-import { Button, Input, Space, Table } from "antd";
+import { Button, Input, Space, Spin, Table } from "antd";
 import { useEffect, useRef, useState } from "react";
 import PrintBill from "../components/bills/PrintBill.jsx";
 import {Header} from "../components/Header/Header.jsx";
@@ -201,8 +201,10 @@ export const BillPage = () => {
   return (
     <>
       <Header />
-      <div className="px-6">
-        <h1 className="text-4xl font-bold text-center mb-4">Faturalar</h1>
+      <h1 className="text-4xl font-bold text-center mb-4">Faturalar</h1>
+      {billItems ? (
+        <div className="px-6">
+        
         <Table
           dataSource={billItems}
           columns={columns}
@@ -215,6 +217,7 @@ export const BillPage = () => {
           rowKey="_id"
         />
       </div>
+      ):<Spin size="large" className="absolute top-1/2 h-screen w-screen flex justify-center"/>}
       <PrintBill
         isModalOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
