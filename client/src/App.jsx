@@ -7,13 +7,21 @@ import StatisticPage from "./pages/StatisticPage";
 import Register from "./pages/auth/Register";
 import Login from "./pages/auth/Login";
 import ProductPage from "./pages/ProductPage";
-import { Children } from "react";
+import { Children, useEffect } from "react";
+import { useSelector } from "react-redux";
 
 
 
 
 
 function App() {
+  const cart = useSelector((state)=> state.cart);
+
+ useEffect(() => {
+  localStorage.setItem("cart",JSON.stringify(cart));
+  
+ }, [cart]);
+
   return (
     <BrowserRouter>
      <Routes>
