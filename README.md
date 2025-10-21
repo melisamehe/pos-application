@@ -6,7 +6,7 @@ This project was developed to learn and practice real-world freelance project de
 - With this project, you will strengthen your React and Tailwind CSS skills, learn how to manage states efficiently using Redux Toolkit, and implement authentication and billing systems with Express.js and MongoDB.
 By the end, you will gain end-to-end MERN project experience and understand how to deploy a full-stack web app to production.
 
-
+<img width="1920" height="954" alt="registerr" src="https://github.com/user-attachments/assets/7c377149-5a8f-499b-a93a-c59166c4aa2a" />
 
 ## 🎯 Key Learning Outcomes
 
@@ -91,7 +91,7 @@ and the backend API handles data communication with MongoDB.
 - 🔗[LinkedIn](www.linkedin.com/in/melisamehenktas)
 
 
-<img width="1920" height="954" alt="registerr" src="https://github.com/user-attachments/assets/7c377149-5a8f-499b-a93a-c59166c4aa2a" />
+
 
 <img width="1920" height="951" alt="loginn" src="https://github.com/user-attachments/assets/ba758125-5843-4825-a058-e1894244ff28" />
 
