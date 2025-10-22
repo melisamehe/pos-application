@@ -8,6 +8,8 @@ By the end, you will gain end-to-end MERN project experience and understand how 
 
 <img width="1920" height="954" alt="registerr" src="https://github.com/user-attachments/assets/7c377149-5a8f-499b-a93a-c59166c4aa2a" />
 
+<img width="1920" height="951" alt="loginn" src="https://github.com/user-attachments/assets/ba758125-5843-4825-a058-e1894244ff28" />
+
 ## 🎯 Key Learning Outcomes
 
 - Develop a React SPA (Single Page Application) from scratch.
@@ -93,7 +95,7 @@ and the backend API handles data communication with MongoDB.
 
 
 
-<img width="1920" height="951" alt="loginn" src="https://github.com/user-attachments/assets/ba758125-5843-4825-a058-e1894244ff28" />
+
 
 <img width="1916" height="999" alt="Ekran Alıntısı8" src="https://github.com/user-attachments/assets/627af2b3-90eb-4b5b-9825-a3a3a270d78d" />
 
